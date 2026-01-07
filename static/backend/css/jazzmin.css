@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "PeydaWeb";
+  src: url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot");
+  src:
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/facd0c10f0712e43a8400ef99533f73f.woff")
+      format("woff");
+}
+
+html {
+  direction: rtl !important;
+}
+
+body {
+  text-align: right;
+  font-family: "PeydaWeb", "Segoe UI", system-ui, sans-serif !important;
+  background-color: #30385c;
+}
+
+/* Core AdminLTE adjustments for RTL */
+.main-sidebar {
+  left: auto;
+  right: 0;
+  min-width: max-content !important;
+  background: linear-gradient(180deg, #151718, #1b1d1f);
+}
+
+* {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border 0.2s ease !important;
+}
+.sidebar a {
+  min-width: max-content;
+  color: #cfd2d6 !important;
+}
+.content-wrapper,
+.main-header,
+.main-footer {
+  margin-left: 0 !important;
+  margin-right: 260px; /* Sidebar width */
+}
+
+.navbar-nav {
+  float: right !important;
+}
+
+.navbar-nav > li {
+  float: right;
+}
+
+/* Flip pull classes */
+.pull-right {
+  float: left !important;
+}
+
+.pull-left {
+  float: right !important;
+}
+
+/* Tables and forms */
+.table th,
+.table td {
+  text-align: right;
+}
+
+.form-control {
+  text-align: right;
+}
+
+/* Additional tweaks for alignment (adjust as needed) */
+.brand-link {
+  text-align: right;
+}
+
+.nav-sidebar .nav-link p {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/* Disable sidebar collapse completely */
+body.sidebar-collapse .main-sidebar {
+  margin-left: 0 !important;
+}
+
+body.sidebar-collapse .content-wrapper,
+body.sidebar-collapse .main-header {
+  margin-left: 250px !important;
+}
+
+/* Hide collapse toggle button */
+[data-widget="pushmenu"] {
+  display: none !important;
+}
